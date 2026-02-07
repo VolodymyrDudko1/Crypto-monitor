@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\themeModeIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\themeModeIcon.png" />
+    <Resource Include="Assets\ThemeModeIconDark.png" />
+  </ItemGroup>
+
+</Project>
