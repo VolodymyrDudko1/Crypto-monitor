@@ -1,0 +1,389 @@
+### YamlMime:ManagedReference
+items:
+- uid: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto
+  commentId: T:Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto
+  id: CoinReferenceDto
+  parent: Crypto_Monitor.SharedAssets.DTOs
+  children:
+  - Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.CoinId
+  - Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.Symbol
+  langs:
+  - csharp
+  - vb
+  name: CoinReferenceDto
+  nameWithType: CoinReferenceDto
+  fullName: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto
+  type: Class
+  source:
+    remote:
+      path: Crypto_Monitor/SharedAssets/DTOs/CoinReferenceDto.cs
+      branch: main
+      repo: https://github.com/VolodymyrDudko1/Crypto-monitor.git
+    id: CoinReferenceDto
+    path: SharedAssets/DTOs/CoinReferenceDto.cs
+    startLine: 3
+  assemblies:
+  - Crypto_Monitor
+  namespace: Crypto_Monitor.SharedAssets.DTOs
+  syntax:
+    content: public class CoinReferenceDto
+    content.vb: Public Class CoinReferenceDto
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.CoinId
+  commentId: P:Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.CoinId
+  id: CoinId
+  parent: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto
+  langs:
+  - csharp
+  - vb
+  name: CoinId
+  nameWithType: CoinReferenceDto.CoinId
+  fullName: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.CoinId
+  type: Property
+  source:
+    remote:
+      path: Crypto_Monitor/SharedAssets/DTOs/CoinReferenceDto.cs
+      branch: main
+      repo: https://github.com/VolodymyrDudko1/Crypto-monitor.git
+    id: CoinId
+    path: SharedAssets/DTOs/CoinReferenceDto.cs
+    startLine: 5
+  assemblies:
+  - Crypto_Monitor
+  namespace: Crypto_Monitor.SharedAssets.DTOs
+  syntax:
+    content: public string CoinId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CoinId As String
+  overload: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.CoinId*
+- uid: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.Symbol
+  commentId: P:Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.Symbol
+  id: Symbol
+  parent: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto
+  langs:
+  - csharp
+  - vb
+  name: Symbol
+  nameWithType: CoinReferenceDto.Symbol
+  fullName: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.Symbol
+  type: Property
+  source:
+    remote:
+      path: Crypto_Monitor/SharedAssets/DTOs/CoinReferenceDto.cs
+      branch: main
+      repo: https://github.com/VolodymyrDudko1/Crypto-monitor.git
+    id: Symbol
+    path: SharedAssets/DTOs/CoinReferenceDto.cs
+    startLine: 6
+  assemblies:
+  - Crypto_Monitor
+  namespace: Crypto_Monitor.SharedAssets.DTOs
+  syntax:
+    content: public string Symbol { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Symbol As String
+  overload: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.Symbol*
+references:
+- uid: Crypto_Monitor.SharedAssets.DTOs
+  commentId: N:Crypto_Monitor.SharedAssets.DTOs
+  href: Crypto_Monitor.html
+  name: Crypto_Monitor.SharedAssets.DTOs
+  nameWithType: Crypto_Monitor.SharedAssets.DTOs
+  fullName: Crypto_Monitor.SharedAssets.DTOs
+  spec.csharp:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets
+    name: SharedAssets
+    href: Crypto_Monitor.SharedAssets.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets.DTOs
+    name: DTOs
+    href: Crypto_Monitor.SharedAssets.DTOs.html
+  spec.vb:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets
+    name: SharedAssets
+    href: Crypto_Monitor.SharedAssets.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets.DTOs
+    name: DTOs
+    href: Crypto_Monitor.SharedAssets.DTOs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.CoinId*
+  commentId: Overload:Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.CoinId
+  href: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.html#Crypto_Monitor_SharedAssets_DTOs_CoinReferenceDto_CoinId
+  name: CoinId
+  nameWithType: CoinReferenceDto.CoinId
+  fullName: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.CoinId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.Symbol*
+  commentId: Overload:Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.Symbol
+  href: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.html#Crypto_Monitor_SharedAssets_DTOs_CoinReferenceDto_Symbol
+  name: Symbol
+  nameWithType: CoinReferenceDto.Symbol
+  fullName: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.Symbol

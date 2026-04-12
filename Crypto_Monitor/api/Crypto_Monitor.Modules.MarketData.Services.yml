@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Crypto_Monitor.Modules.MarketData.Services
+  commentId: N:Crypto_Monitor.Modules.MarketData.Services
+  id: Crypto_Monitor.Modules.MarketData.Services
+  children:
+  - Crypto_Monitor.Modules.MarketData.Services.CoinMapper
+  langs:
+  - csharp
+  - vb
+  name: Crypto_Monitor.Modules.MarketData.Services
+  nameWithType: Crypto_Monitor.Modules.MarketData.Services
+  fullName: Crypto_Monitor.Modules.MarketData.Services
+  type: Namespace
+  assemblies:
+  - Crypto_Monitor
+references:
+- uid: Crypto_Monitor.Modules.MarketData.Services.CoinMapper
+  commentId: T:Crypto_Monitor.Modules.MarketData.Services.CoinMapper
+  href: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.html
+  name: CoinMapper
+  nameWithType: CoinMapper
+  fullName: Crypto_Monitor.Modules.MarketData.Services.CoinMapper

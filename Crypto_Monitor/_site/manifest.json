@@ -1,0 +1,312 @@
+{
+  "source_base_path": "C:/Users/minim/OneDrive/Документи/Programming/Repos/Projects/CryptoMonitor/Crypto-monitor/Crypto_Monitor",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.App.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.App",
+      "Summary": "<p sourcefile=\"api/Crypto_Monitor.App.yml\" sourcestartlinenumber=\"1\">Interaction logic for App.xaml</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.MainWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.MainWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.MainWindow",
+      "Summary": "<p sourcefile=\"api/Crypto_Monitor.MainWindow.yml\" sourcestartlinenumber=\"1\">MainWindow</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.Modules.MarketData.Domain.Coin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.Modules.MarketData.Domain.Coin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.Modules.MarketData.Domain.Coin",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.Modules.MarketData.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.Modules.MarketData.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.Modules.MarketData.Domain",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.Modules.MarketData.Infrastructure.CryptoApiClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.Modules.MarketData.Infrastructure.CryptoApiClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.Modules.MarketData.Infrastructure.CryptoApiClient",
+      "Summary": "<p sourcefile=\"api/Crypto_Monitor.Modules.MarketData.Infrastructure.CryptoApiClient.yml\" sourcestartlinenumber=\"1\">Infrastructure Client for fetching Market Data.\nImplements API interactions including Versioning, parsing, and Health Checks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.Modules.MarketData.Infrastructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.Modules.MarketData.Infrastructure.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.Modules.MarketData.Infrastructure",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.Modules.MarketData.Services.CoinMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.Modules.MarketData.Services.CoinMapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.Modules.MarketData.Services.CoinMapper",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.Modules.MarketData.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.Modules.MarketData.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.Modules.MarketData.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.Pages.Details.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.Pages.Details.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.Pages.Details",
+      "Summary": "<p sourcefile=\"api/Crypto_Monitor.Pages.Details.yml\" sourcestartlinenumber=\"1\">Details</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.Pages.FrontPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.Pages.FrontPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.Pages.FrontPage",
+      "Summary": "<p sourcefile=\"api/Crypto_Monitor.Pages.FrontPage.yml\" sourcestartlinenumber=\"1\">Interaction logic for FrontPage.xaml</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.Pages.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.Pages",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.SharedAssets.DTOs.CoinDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.SharedAssets.DTOs.CoinDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.SharedAssets.DTOs.CoinDto",
+      "Summary": "<p sourcefile=\"api/Crypto_Monitor.SharedAssets.DTOs.CoinDto.yml\" sourcestartlinenumber=\"1\">Data Transfer Object representing a coin.\nIncludes DataAnnotations for Input Validation (Requirement 1)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.SharedAssets.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.SharedAssets.DTOs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor.SharedAssets.DTOs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Crypto_Monitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crypto_Monitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crypto_Monitor",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -6,15 +6,43 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\themeModeIcon.png" />
+    <None Remove="SharedAssets\Assets\themeModeIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\themeModeIcon.png" />
-    <Resource Include="Assets\ThemeModeIconDark.png" />
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.5" />
+    <PackageReference Include="Riok.Mapperly" Version="4.3.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="Host\App.xaml" />
+    <Page Remove="Host\App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="SharedAssets\Assets\themeModeIcon.png" />
+    <Resource Include="SharedAssets\Assets\ThemeModeIconDark.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="System.Net.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="CryptoApiClient" />
   </ItemGroup>
 
 </Project>

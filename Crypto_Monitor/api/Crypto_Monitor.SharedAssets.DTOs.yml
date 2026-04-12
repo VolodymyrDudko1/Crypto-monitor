@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Crypto_Monitor.SharedAssets.DTOs
+  commentId: N:Crypto_Monitor.SharedAssets.DTOs
+  id: Crypto_Monitor.SharedAssets.DTOs
+  children:
+  - Crypto_Monitor.SharedAssets.DTOs.CoinDto
+  - Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto
+  langs:
+  - csharp
+  - vb
+  name: Crypto_Monitor.SharedAssets.DTOs
+  nameWithType: Crypto_Monitor.SharedAssets.DTOs
+  fullName: Crypto_Monitor.SharedAssets.DTOs
+  type: Namespace
+  assemblies:
+  - Crypto_Monitor
+references:
+- uid: Crypto_Monitor.SharedAssets.DTOs.CoinDto
+  commentId: T:Crypto_Monitor.SharedAssets.DTOs.CoinDto
+  parent: Crypto_Monitor.SharedAssets.DTOs
+  href: Crypto_Monitor.SharedAssets.DTOs.CoinDto.html
+  name: CoinDto
+  nameWithType: CoinDto
+  fullName: Crypto_Monitor.SharedAssets.DTOs.CoinDto
+- uid: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto
+  commentId: T:Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto
+  href: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto.html
+  name: CoinReferenceDto
+  nameWithType: CoinReferenceDto
+  fullName: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto
+- uid: Crypto_Monitor.SharedAssets.DTOs
+  commentId: N:Crypto_Monitor.SharedAssets.DTOs
+  href: Crypto_Monitor.html
+  name: Crypto_Monitor.SharedAssets.DTOs
+  nameWithType: Crypto_Monitor.SharedAssets.DTOs
+  fullName: Crypto_Monitor.SharedAssets.DTOs
+  spec.csharp:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets
+    name: SharedAssets
+    href: Crypto_Monitor.SharedAssets.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets.DTOs
+    name: DTOs
+    href: Crypto_Monitor.SharedAssets.DTOs.html
+  spec.vb:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets
+    name: SharedAssets
+    href: Crypto_Monitor.SharedAssets.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets.DTOs
+    name: DTOs
+    href: Crypto_Monitor.SharedAssets.DTOs.html

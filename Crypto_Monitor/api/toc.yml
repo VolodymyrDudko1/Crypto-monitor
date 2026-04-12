@@ -1,0 +1,57 @@
+### YamlMime:TableOfContent
+items:
+- uid: Crypto_Monitor
+  name: Crypto_Monitor
+  type: Namespace
+  items:
+  - uid: Crypto_Monitor.App
+    name: App
+    type: Class
+  - uid: Crypto_Monitor.MainWindow
+    name: MainWindow
+    type: Class
+- uid: Crypto_Monitor.Modules.MarketData.Domain
+  name: Crypto_Monitor.Modules.MarketData.Domain
+  type: Namespace
+  items:
+  - uid: Crypto_Monitor.Modules.MarketData.Domain.Coin
+    name: Coin
+    type: Class
+- uid: Crypto_Monitor.Modules.MarketData.Infrastructure
+  name: Crypto_Monitor.Modules.MarketData.Infrastructure
+  type: Namespace
+  items:
+  - uid: Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse
+    name: CoinGeckoResponse
+    type: Class
+  - uid: Crypto_Monitor.Modules.MarketData.Infrastructure.CryptoApiClient
+    name: CryptoApiClient
+    type: Class
+- uid: Crypto_Monitor.Modules.MarketData.Services
+  name: Crypto_Monitor.Modules.MarketData.Services
+  type: Namespace
+  items:
+  - uid: Crypto_Monitor.Modules.MarketData.Services.CoinMapper
+    name: CoinMapper
+    type: Class
+- uid: Crypto_Monitor.Pages
+  name: Crypto_Monitor.Pages
+  type: Namespace
+  items:
+  - uid: Crypto_Monitor.Pages.Details
+    name: Details
+    type: Class
+  - uid: Crypto_Monitor.Pages.FrontPage
+    name: FrontPage
+    type: Class
+- uid: Crypto_Monitor.SharedAssets.DTOs
+  name: Crypto_Monitor.SharedAssets.DTOs
+  type: Namespace
+  items:
+  - uid: Crypto_Monitor.SharedAssets.DTOs.CoinDto
+    name: CoinDto
+    type: Class
+  - uid: Crypto_Monitor.SharedAssets.DTOs.CoinReferenceDto
+    name: CoinReferenceDto
+    type: Class
+memberLayout: SamePage

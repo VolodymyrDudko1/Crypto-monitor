@@ -1,0 +1,570 @@
+### YamlMime:ManagedReference
+items:
+- uid: Crypto_Monitor.Modules.MarketData.Services.CoinMapper
+  commentId: T:Crypto_Monitor.Modules.MarketData.Services.CoinMapper
+  id: CoinMapper
+  parent: Crypto_Monitor.Modules.MarketData.Services
+  children:
+  - Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDomain(Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse)
+  - Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDto(Crypto_Monitor.Modules.MarketData.Domain.Coin)
+  langs:
+  - csharp
+  - vb
+  name: CoinMapper
+  nameWithType: CoinMapper
+  fullName: Crypto_Monitor.Modules.MarketData.Services.CoinMapper
+  type: Class
+  source:
+    id: CoinMapper
+    path: C:\Users\minim\OneDrive\Документи\Programming\Repos\Projects\CryptoMonitor\Crypto-monitor\Crypto_Monitor\obj\Release\net10.0-windows\Riok.Mapperly\Riok.Mapperly.MapperGenerator\CoinMapper.g.cs
+    startLine: 4
+  assemblies:
+  - Crypto_Monitor
+  namespace: Crypto_Monitor.Modules.MarketData.Services
+  syntax:
+    content: >-
+      [Mapper]
+
+      public class CoinMapper
+    content.vb: >-
+      <Mapper>
+
+      Public Class CoinMapper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Riok.Mapperly.Abstractions.MapperAttribute
+    ctor: Riok.Mapperly.Abstractions.MapperAttribute.#ctor
+    arguments: []
+- uid: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDomain(Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse)
+  commentId: M:Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDomain(Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse)
+  id: ToDomain(Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse)
+  parent: Crypto_Monitor.Modules.MarketData.Services.CoinMapper
+  langs:
+  - csharp
+  - vb
+  name: ToDomain(CoinGeckoResponse)
+  nameWithType: CoinMapper.ToDomain(CoinGeckoResponse)
+  fullName: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDomain(Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse)
+  type: Method
+  source:
+    remote:
+      path: Crypto_Monitor/Modules/MarketData/Services/CoinMapper.cs
+      branch: main
+      repo: https://github.com/VolodymyrDudko1/Crypto-monitor.git
+    id: ToDomain
+    path: Modules/MarketData/Services/CoinMapper.cs
+    startLine: 11
+  assemblies:
+  - Crypto_Monitor
+  namespace: Crypto_Monitor.Modules.MarketData.Services
+  syntax:
+    content: public Coin ToDomain(CoinGeckoResponse apiResponse)
+    parameters:
+    - id: apiResponse
+      type: Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse
+    return:
+      type: Crypto_Monitor.Modules.MarketData.Domain.Coin
+    content.vb: Public Function ToDomain(apiResponse As CoinGeckoResponse) As Coin
+  overload: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDomain*
+- uid: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDto(Crypto_Monitor.Modules.MarketData.Domain.Coin)
+  commentId: M:Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDto(Crypto_Monitor.Modules.MarketData.Domain.Coin)
+  id: ToDto(Crypto_Monitor.Modules.MarketData.Domain.Coin)
+  parent: Crypto_Monitor.Modules.MarketData.Services.CoinMapper
+  langs:
+  - csharp
+  - vb
+  name: ToDto(Coin)
+  nameWithType: CoinMapper.ToDto(Coin)
+  fullName: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDto(Crypto_Monitor.Modules.MarketData.Domain.Coin)
+  type: Method
+  source:
+    remote:
+      path: Crypto_Monitor/Modules/MarketData/Services/CoinMapper.cs
+      branch: main
+      repo: https://github.com/VolodymyrDudko1/Crypto-monitor.git
+    id: ToDto
+    path: Modules/MarketData/Services/CoinMapper.cs
+    startLine: 13
+  assemblies:
+  - Crypto_Monitor
+  namespace: Crypto_Monitor.Modules.MarketData.Services
+  syntax:
+    content: >-
+      [MapProperty("Id", "CoinId")]
+
+      [MapProperty("Name", "CoinName")]
+
+      [MapProperty("Symbol", "Ticker")]
+
+      [MapProperty("CurrentPrice", "Price")]
+
+      public CoinDto ToDto(Coin coin)
+    parameters:
+    - id: coin
+      type: Crypto_Monitor.Modules.MarketData.Domain.Coin
+    return:
+      type: Crypto_Monitor.SharedAssets.DTOs.CoinDto
+    content.vb: >-
+      <MapProperty("Id", "CoinId")>
+
+      <MapProperty("Name", "CoinName")>
+
+      <MapProperty("Symbol", "Ticker")>
+
+      <MapProperty("CurrentPrice", "Price")>
+
+      Public Function ToDto(coin As Coin) As CoinDto
+  overload: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDto*
+  attributes:
+  - type: Riok.Mapperly.Abstractions.MapPropertyAttribute
+    ctor: Riok.Mapperly.Abstractions.MapPropertyAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Id
+    - type: System.String
+      value: CoinId
+  - type: Riok.Mapperly.Abstractions.MapPropertyAttribute
+    ctor: Riok.Mapperly.Abstractions.MapPropertyAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Name
+    - type: System.String
+      value: CoinName
+  - type: Riok.Mapperly.Abstractions.MapPropertyAttribute
+    ctor: Riok.Mapperly.Abstractions.MapPropertyAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Symbol
+    - type: System.String
+      value: Ticker
+  - type: Riok.Mapperly.Abstractions.MapPropertyAttribute
+    ctor: Riok.Mapperly.Abstractions.MapPropertyAttribute.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: CurrentPrice
+    - type: System.String
+      value: Price
+references:
+- uid: Crypto_Monitor.Modules.MarketData.Services
+  commentId: N:Crypto_Monitor.Modules.MarketData.Services
+  href: Crypto_Monitor.html
+  name: Crypto_Monitor.Modules.MarketData.Services
+  nameWithType: Crypto_Monitor.Modules.MarketData.Services
+  fullName: Crypto_Monitor.Modules.MarketData.Services
+  spec.csharp:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.Modules
+    name: Modules
+    href: Crypto_Monitor.Modules.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData
+    name: MarketData
+    href: Crypto_Monitor.Modules.MarketData.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData.Services
+    name: Services
+    href: Crypto_Monitor.Modules.MarketData.Services.html
+  spec.vb:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.Modules
+    name: Modules
+    href: Crypto_Monitor.Modules.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData
+    name: MarketData
+    href: Crypto_Monitor.Modules.MarketData.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData.Services
+    name: Services
+    href: Crypto_Monitor.Modules.MarketData.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDomain*
+  commentId: Overload:Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDomain
+  href: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.html#Crypto_Monitor_Modules_MarketData_Services_CoinMapper_ToDomain_Crypto_Monitor_Modules_MarketData_Infrastructure_CoinGeckoResponse_
+  name: ToDomain
+  nameWithType: CoinMapper.ToDomain
+  fullName: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDomain
+- uid: Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse
+  commentId: T:Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse
+  parent: Crypto_Monitor.Modules.MarketData.Infrastructure
+  href: Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse.html
+  name: CoinGeckoResponse
+  nameWithType: CoinGeckoResponse
+  fullName: Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse
+- uid: Crypto_Monitor.Modules.MarketData.Domain.Coin
+  commentId: T:Crypto_Monitor.Modules.MarketData.Domain.Coin
+  parent: Crypto_Monitor.Modules.MarketData.Domain
+  href: Crypto_Monitor.Modules.MarketData.Domain.Coin.html
+  name: Coin
+  nameWithType: Coin
+  fullName: Crypto_Monitor.Modules.MarketData.Domain.Coin
+- uid: Crypto_Monitor.Modules.MarketData.Infrastructure
+  commentId: N:Crypto_Monitor.Modules.MarketData.Infrastructure
+  href: Crypto_Monitor.html
+  name: Crypto_Monitor.Modules.MarketData.Infrastructure
+  nameWithType: Crypto_Monitor.Modules.MarketData.Infrastructure
+  fullName: Crypto_Monitor.Modules.MarketData.Infrastructure
+  spec.csharp:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.Modules
+    name: Modules
+    href: Crypto_Monitor.Modules.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData
+    name: MarketData
+    href: Crypto_Monitor.Modules.MarketData.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData.Infrastructure
+    name: Infrastructure
+    href: Crypto_Monitor.Modules.MarketData.Infrastructure.html
+  spec.vb:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.Modules
+    name: Modules
+    href: Crypto_Monitor.Modules.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData
+    name: MarketData
+    href: Crypto_Monitor.Modules.MarketData.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData.Infrastructure
+    name: Infrastructure
+    href: Crypto_Monitor.Modules.MarketData.Infrastructure.html
+- uid: Crypto_Monitor.Modules.MarketData.Domain
+  commentId: N:Crypto_Monitor.Modules.MarketData.Domain
+  href: Crypto_Monitor.html
+  name: Crypto_Monitor.Modules.MarketData.Domain
+  nameWithType: Crypto_Monitor.Modules.MarketData.Domain
+  fullName: Crypto_Monitor.Modules.MarketData.Domain
+  spec.csharp:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.Modules
+    name: Modules
+    href: Crypto_Monitor.Modules.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData
+    name: MarketData
+    href: Crypto_Monitor.Modules.MarketData.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData.Domain
+    name: Domain
+    href: Crypto_Monitor.Modules.MarketData.Domain.html
+  spec.vb:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.Modules
+    name: Modules
+    href: Crypto_Monitor.Modules.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData
+    name: MarketData
+    href: Crypto_Monitor.Modules.MarketData.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData.Domain
+    name: Domain
+    href: Crypto_Monitor.Modules.MarketData.Domain.html
+- uid: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDto*
+  commentId: Overload:Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDto
+  href: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.html#Crypto_Monitor_Modules_MarketData_Services_CoinMapper_ToDto_Crypto_Monitor_Modules_MarketData_Domain_Coin_
+  name: ToDto
+  nameWithType: CoinMapper.ToDto
+  fullName: Crypto_Monitor.Modules.MarketData.Services.CoinMapper.ToDto
+- uid: Crypto_Monitor.SharedAssets.DTOs.CoinDto
+  commentId: T:Crypto_Monitor.SharedAssets.DTOs.CoinDto
+  parent: Crypto_Monitor.SharedAssets.DTOs
+  href: Crypto_Monitor.SharedAssets.DTOs.CoinDto.html
+  name: CoinDto
+  nameWithType: CoinDto
+  fullName: Crypto_Monitor.SharedAssets.DTOs.CoinDto
+- uid: Crypto_Monitor.SharedAssets.DTOs
+  commentId: N:Crypto_Monitor.SharedAssets.DTOs
+  href: Crypto_Monitor.html
+  name: Crypto_Monitor.SharedAssets.DTOs
+  nameWithType: Crypto_Monitor.SharedAssets.DTOs
+  fullName: Crypto_Monitor.SharedAssets.DTOs
+  spec.csharp:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets
+    name: SharedAssets
+    href: Crypto_Monitor.SharedAssets.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets.DTOs
+    name: DTOs
+    href: Crypto_Monitor.SharedAssets.DTOs.html
+  spec.vb:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets
+    name: SharedAssets
+    href: Crypto_Monitor.SharedAssets.html
+  - name: .
+  - uid: Crypto_Monitor.SharedAssets.DTOs
+    name: DTOs
+    href: Crypto_Monitor.SharedAssets.DTOs.html

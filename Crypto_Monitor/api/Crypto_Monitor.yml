@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Crypto_Monitor
+  commentId: N:Crypto_Monitor
+  id: Crypto_Monitor
+  children:
+  - Crypto_Monitor.App
+  - Crypto_Monitor.MainWindow
+  langs:
+  - csharp
+  - vb
+  name: Crypto_Monitor
+  nameWithType: Crypto_Monitor
+  fullName: Crypto_Monitor
+  type: Namespace
+  assemblies:
+  - Crypto_Monitor
+references:
+- uid: Crypto_Monitor.App
+  commentId: T:Crypto_Monitor.App
+  href: Crypto_Monitor.App.html
+  name: App
+  nameWithType: App
+  fullName: Crypto_Monitor.App
+- uid: Crypto_Monitor.MainWindow
+  commentId: T:Crypto_Monitor.MainWindow
+  href: Crypto_Monitor.MainWindow.html
+  name: MainWindow
+  nameWithType: MainWindow
+  fullName: Crypto_Monitor.MainWindow

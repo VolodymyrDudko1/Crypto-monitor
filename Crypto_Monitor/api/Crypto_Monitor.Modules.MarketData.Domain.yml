@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Crypto_Monitor.Modules.MarketData.Domain
+  commentId: N:Crypto_Monitor.Modules.MarketData.Domain
+  id: Crypto_Monitor.Modules.MarketData.Domain
+  children:
+  - Crypto_Monitor.Modules.MarketData.Domain.Coin
+  langs:
+  - csharp
+  - vb
+  name: Crypto_Monitor.Modules.MarketData.Domain
+  nameWithType: Crypto_Monitor.Modules.MarketData.Domain
+  fullName: Crypto_Monitor.Modules.MarketData.Domain
+  type: Namespace
+  assemblies:
+  - Crypto_Monitor
+references:
+- uid: Crypto_Monitor.Modules.MarketData.Domain.Coin
+  commentId: T:Crypto_Monitor.Modules.MarketData.Domain.Coin
+  parent: Crypto_Monitor.Modules.MarketData.Domain
+  href: Crypto_Monitor.Modules.MarketData.Domain.Coin.html
+  name: Coin
+  nameWithType: Coin
+  fullName: Crypto_Monitor.Modules.MarketData.Domain.Coin
+- uid: Crypto_Monitor.Modules.MarketData.Domain
+  commentId: N:Crypto_Monitor.Modules.MarketData.Domain
+  href: Crypto_Monitor.html
+  name: Crypto_Monitor.Modules.MarketData.Domain
+  nameWithType: Crypto_Monitor.Modules.MarketData.Domain
+  fullName: Crypto_Monitor.Modules.MarketData.Domain
+  spec.csharp:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.Modules
+    name: Modules
+    href: Crypto_Monitor.Modules.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData
+    name: MarketData
+    href: Crypto_Monitor.Modules.MarketData.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData.Domain
+    name: Domain
+    href: Crypto_Monitor.Modules.MarketData.Domain.html
+  spec.vb:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.Modules
+    name: Modules
+    href: Crypto_Monitor.Modules.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData
+    name: MarketData
+    href: Crypto_Monitor.Modules.MarketData.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData.Domain
+    name: Domain
+    href: Crypto_Monitor.Modules.MarketData.Domain.html

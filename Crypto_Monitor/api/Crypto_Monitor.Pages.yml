@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Crypto_Monitor.Pages
+  commentId: N:Crypto_Monitor.Pages
+  id: Crypto_Monitor.Pages
+  children:
+  - Crypto_Monitor.Pages.Details
+  - Crypto_Monitor.Pages.FrontPage
+  langs:
+  - csharp
+  - vb
+  name: Crypto_Monitor.Pages
+  nameWithType: Crypto_Monitor.Pages
+  fullName: Crypto_Monitor.Pages
+  type: Namespace
+  assemblies:
+  - Crypto_Monitor
+references:
+- uid: Crypto_Monitor.Pages.Details
+  commentId: T:Crypto_Monitor.Pages.Details
+  href: Crypto_Monitor.Pages.Details.html
+  name: Details
+  nameWithType: Details
+  fullName: Crypto_Monitor.Pages.Details
+- uid: Crypto_Monitor.Pages.FrontPage
+  commentId: T:Crypto_Monitor.Pages.FrontPage
+  href: Crypto_Monitor.Pages.FrontPage.html
+  name: FrontPage
+  nameWithType: FrontPage
+  fullName: Crypto_Monitor.Pages.FrontPage

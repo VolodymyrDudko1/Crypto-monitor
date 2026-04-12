@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Crypto_Monitor.Modules.MarketData.Infrastructure
+  commentId: N:Crypto_Monitor.Modules.MarketData.Infrastructure
+  id: Crypto_Monitor.Modules.MarketData.Infrastructure
+  children:
+  - Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse
+  - Crypto_Monitor.Modules.MarketData.Infrastructure.CryptoApiClient
+  langs:
+  - csharp
+  - vb
+  name: Crypto_Monitor.Modules.MarketData.Infrastructure
+  nameWithType: Crypto_Monitor.Modules.MarketData.Infrastructure
+  fullName: Crypto_Monitor.Modules.MarketData.Infrastructure
+  type: Namespace
+  assemblies:
+  - Crypto_Monitor
+references:
+- uid: Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse
+  commentId: T:Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse
+  parent: Crypto_Monitor.Modules.MarketData.Infrastructure
+  href: Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse.html
+  name: CoinGeckoResponse
+  nameWithType: CoinGeckoResponse
+  fullName: Crypto_Monitor.Modules.MarketData.Infrastructure.CoinGeckoResponse
+- uid: Crypto_Monitor.Modules.MarketData.Infrastructure.CryptoApiClient
+  commentId: T:Crypto_Monitor.Modules.MarketData.Infrastructure.CryptoApiClient
+  href: Crypto_Monitor.Modules.MarketData.Infrastructure.CryptoApiClient.html
+  name: CryptoApiClient
+  nameWithType: CryptoApiClient
+  fullName: Crypto_Monitor.Modules.MarketData.Infrastructure.CryptoApiClient
+- uid: Crypto_Monitor.Modules.MarketData.Infrastructure
+  commentId: N:Crypto_Monitor.Modules.MarketData.Infrastructure
+  href: Crypto_Monitor.html
+  name: Crypto_Monitor.Modules.MarketData.Infrastructure
+  nameWithType: Crypto_Monitor.Modules.MarketData.Infrastructure
+  fullName: Crypto_Monitor.Modules.MarketData.Infrastructure
+  spec.csharp:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.Modules
+    name: Modules
+    href: Crypto_Monitor.Modules.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData
+    name: MarketData
+    href: Crypto_Monitor.Modules.MarketData.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData.Infrastructure
+    name: Infrastructure
+    href: Crypto_Monitor.Modules.MarketData.Infrastructure.html
+  spec.vb:
+  - uid: Crypto_Monitor
+    name: Crypto_Monitor
+    href: Crypto_Monitor.html
+  - name: .
+  - uid: Crypto_Monitor.Modules
+    name: Modules
+    href: Crypto_Monitor.Modules.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData
+    name: MarketData
+    href: Crypto_Monitor.Modules.MarketData.html
+  - name: .
+  - uid: Crypto_Monitor.Modules.MarketData.Infrastructure
+    name: Infrastructure
+    href: Crypto_Monitor.Modules.MarketData.Infrastructure.html
