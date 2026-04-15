@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="Crypto_Monitor.csproj" />
+  <Project Path="CryptoMonitor.Shared\CryptoMonitor.Shared.csproj" />
+  <Project Path="CryptoMonitor.MarketData.API\CryptoMonitor.MarketData.API.csproj" />
 </Solution>

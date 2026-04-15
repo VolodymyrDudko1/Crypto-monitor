@@ -10,6 +10,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="CryptoMonitor.MarketData.API\**\*.cs" />
+    <Compile Remove="CryptoMonitor.Shared\**\*.cs" />
+    <Compile Remove="**\obj\**\*.cs" />
+
+    <None Remove="CryptoMonitor.MarketData.API\**\*" />
+    <None Remove="CryptoMonitor.Shared\**\*" />
+
+    <EmbeddedResource Remove="CryptoMonitor.MarketData.API\**\*" />
+    <EmbeddedResource Remove="CryptoMonitor.Shared\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="SharedAssets\Assets\themeModeIcon.png" />
   </ItemGroup>
 
@@ -17,6 +29,7 @@
     <PackageReference Include="Extended.Wpf.Toolkit" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.0" />
     <PackageReference Include="Riok.Mapperly" Version="4.3.1" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
@@ -43,6 +56,10 @@
 
   <ItemGroup>
     <Service Include="CryptoApiClient" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="CryptoMonitor.Shared\CryptoMonitor.Shared.csproj" />
   </ItemGroup>
 
 </Project>

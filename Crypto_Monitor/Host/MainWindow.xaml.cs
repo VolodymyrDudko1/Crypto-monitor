@@ -20,21 +20,16 @@ namespace Crypto_Monitor
         }
         private void SwitchTheme(object sender, RoutedEventArgs e)
         {
-            
-
             if (Application.Current.ThemeMode.Value == "Dark")
             {
                 Application.Current.ThemeMode = ThemeMode.Light;
-                Resources["ThemeModeIcon"] = new BitmapImage(new Uri("pack://application:,,,/Assets/themeModeIcon.png"));
+                Resources["ThemeModeIcon"] = new BitmapImage(new Uri("pack://application:,,,/SharedAssets/Assets/themeModeIcon.png"));
             }
             else
             {
                 Application.Current.ThemeMode = ThemeMode.Dark;
-                Resources["ThemeModeIcon"] = new BitmapImage(new Uri("pack://application:,,,/Assets/themeModeIconDark.png"));
-                
+                Resources["ThemeModeIcon"] = new BitmapImage(new Uri("pack://application:,,,/SharedAssets/Assets/ThemeModeIconDark.png"));
             }
-            
-            
         }
     }
 }
