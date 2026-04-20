@@ -18,6 +18,7 @@ public class CryptoApiClient
     private readonly HttpClient _httpClient;
     private readonly string _marketDataServiceBaseUrl;
     private readonly WpfLogStore _logStore;
+    private readonly Task _logStoreInitializationTask;
     private readonly int _maxRetries;
     private readonly TimeSpan _requestTimeout;
     private readonly int _circuitFailureThreshold;
@@ -31,7 +32,7 @@ public class CryptoApiClient
         _httpClient = httpClient;
         _marketDataServiceBaseUrl = config["MarketDataService:BaseUrl"] ?? "http://localhost:5135/api/v1/marketdata";
         _logStore = new WpfLogStore(config);
-        _logStore.InitializeAsync().GetAwaiter().GetResult();
+        _logStoreInitializationTask = _logStore.InitializeAsync();
 
         _maxRetries = int.TryParse(config["Resilience:MaxRetries"], out var retries) ? retries : 2;
         _requestTimeout = TimeSpan.FromSeconds(int.TryParse(config["Resilience:RequestTimeoutSeconds"], out var timeoutSeconds) ? timeoutSeconds : 5);
@@ -113,7 +114,7 @@ public class CryptoApiClient
         if (IsCircuitOpen())
         {
             var openCorrelationId = Guid.NewGuid().ToString("N");
-            await _logStore.LogAsync(openCorrelationId, path, 503, "Circuit breaker is open. Fallback used.");
+            await SafeLogAsync(openCorrelationId, path, 503, "Circuit breaker is open. Fallback used.");
             return fallbackFactory();
         }
 
@@ -138,14 +139,14 @@ public class CryptoApiClient
                     ? values.FirstOrDefault() ?? correlationId
                     : correlationId;
 
-                await _logStore.LogAsync(serverCorrelationId, path, (int)response.StatusCode, $"Attempt {attempt} succeeded.");
+                await SafeLogAsync(serverCorrelationId, path, (int)response.StatusCode, $"Attempt {attempt} succeeded.");
                 RegisterSuccess();
                 return await responseFactory(response);
             }
             catch (Exception ex) when (IsTransient(ex) && attempt <= _maxRetries + 1)
             {
                 lastError = ex;
-                await _logStore.LogAsync(correlationId, path, 500, $"Attempt {attempt} failed: {ex.Message}");
+                await SafeLogAsync(correlationId, path, 500, $"Attempt {attempt} failed: {ex.Message}");
 
                 if (attempt > _maxRetries)
                 {
@@ -158,8 +159,20 @@ public class CryptoApiClient
 
         RegisterFailure();
         var failedCorrelationId = Guid.NewGuid().ToString("N");
-        await _logStore.LogAsync(failedCorrelationId, path, 503, $"Fallback used after retries: {lastError?.Message}");
+        await SafeLogAsync(failedCorrelationId, path, 503, $"Fallback used after retries: {lastError?.Message}");
         return fallbackFactory();
+    }
+
+    private async Task SafeLogAsync(string correlationId, string path, int statusCode, string message)
+    {
+        try
+        {
+            await _logStoreInitializationTask;
+            await _logStore.LogAsync(correlationId, path, statusCode, message);
+        }
+        catch
+        {
+        }
     }
 
     private bool IsTransient(Exception exception)

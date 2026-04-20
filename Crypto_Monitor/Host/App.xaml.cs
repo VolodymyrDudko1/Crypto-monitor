@@ -32,14 +32,51 @@ namespace Crypto_Monitor
 
         private void App_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
         {
-            MessageBox.Show($"[Error {DateTime.Now:O}]: {e.Exception.Message}", "Global Error Handler", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show(
+                FormatExceptionDetails("Error", e.Exception),
+                "Global Error Handler",
+                MessageBoxButton.OK,
+                MessageBoxImage.Error);
             e.Handled = true; // Prevent the application from crashing
         }
 
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
             var exception = e.ExceptionObject as Exception;
-            MessageBox.Show($"[Critical Error {DateTime.Now:O}]: {exception?.Message}", "Global Error Handler", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show(
+                FormatExceptionDetails("Critical Error", exception),
+                "Global Error Handler",
+                MessageBoxButton.OK,
+                MessageBoxImage.Error);
+        }
+
+        private static string FormatExceptionDetails(string label, Exception? exception)
+        {
+            if (exception is null)
+            {
+                return $"[{label} {DateTime.Now:O}]: Unknown exception";
+            }
+
+            var details = $"[{label} {DateTime.Now:O}]\n"
+                        + $"Type: {exception.GetType().FullName}\n"
+                        + $"Message: {exception.Message}\n\n"
+                        + $"StackTrace:\n{exception.StackTrace}";
+
+            var inner = exception.InnerException;
+            var level = 1;
+
+            while (inner is not null)
+            {
+                details += $"\n\nInnerException #{level}\n"
+                         + $"Type: {inner.GetType().FullName}\n"
+                         + $"Message: {inner.Message}\n"
+                         + $"StackTrace:\n{inner.StackTrace}";
+
+                inner = inner.InnerException;
+                level++;
+            }
+
+            return details;
         }
     }
 }
